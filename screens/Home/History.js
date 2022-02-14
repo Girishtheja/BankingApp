@@ -21,7 +21,7 @@ export default function History() {
            
                 <View style={styles.history}>
                     <Image style={styles.icons} source={require('../../icons/apple.png')}/>
-                    <Text style={styles.titles}>Apple Store {'\n'}
+                    <Text style={styles.titles}>Apple Store  {'\n'}
                     <Text style={{color:'#A9A9A9'}}>Visa</Text></Text>
                     <Text style={styles.corner}> -5,99$</Text>
                 </View>
@@ -30,13 +30,13 @@ export default function History() {
                 <Image style={styles.icons} source={require('../../icons/spotify.png')}/>
                 <Text style={styles.titles}>Spotify{'\n'} 
                 <Text style={{color:'#A9A9A9'}}>Visa</Text></Text> 
-                <Text style={styles.corner,{marginLeft:200,color:'black',marginTop:20}}>-12,99$</Text>
+                <Text style={styles.corner,{marginLeft:190,color:'black',marginTop:20,fontSize:20,fontWeight:'800'}}>-12,99$</Text>
 
                 </View>
             
                 <View style={styles.history}>
                 <Image style={styles.icons} source={require('../../icons/local.png')}/>
-                <Text style={styles.titles}>Local cafe {'\n'} 
+                <Text style={styles.titles}>Local cafe    {'\n'} 
                 <Text style={{color:'#A9A9A9'}}>Visa</Text> </Text>
                 <Text style={styles.corner}> -2,99$</Text>
                 
@@ -44,7 +44,7 @@ export default function History() {
                 
                 <View style={styles.history}>
                 <Image style={styles.icons} source={require('../../icons/apple.png')}/>
-                <Text style={styles.titles}>Apple Store{'\n'} 
+                <Text style={styles.titles}>Apple Store {'\n'} 
                 <Text style={{color:'#A9A9A9'}}>Visa</Text></Text>
                 <Text style={styles.corner}> -3,99$</Text>
                 </View>
@@ -80,9 +80,12 @@ const styles = StyleSheet.create({
     flexDirection:'row'
     },
     corner:{
-        marginHorizontal:175,
-        marginTop:20,
+        marginHorizontal:165,
+        marginTop:0,
         color:'#000',
+        fontWeight:'800',
+        fontSize:20,
+
     },
     HistoryBar:{
       display:'flex',
